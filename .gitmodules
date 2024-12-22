@@ -1,0 +1,6 @@
+[submodule "TA046-Ingenieria-de-Software-I-TP-Integrador"]
+	path = TA046-Ingenieria-de-Software-I-TP-Integrador
+	url = https://github.com/agustinbarbalase/TA046-Ingenieria-de-Software-I-TP-Integrador
+[submodule "tp-integrador"]
+	path = tp-integrador
+	url = https://github.com/agustinbarbalase/TA046-Ingenieria-de-Software-I-TP-Integrador
