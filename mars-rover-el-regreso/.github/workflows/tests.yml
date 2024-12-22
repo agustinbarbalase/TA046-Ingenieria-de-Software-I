@@ -1,0 +1,22 @@
+name: Run tests in SmallTalk
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Cuis University
+        run: ./.github/workflows/installCuis.sh
+      - name: "Run tests: MarsRover"
+        run: ./.github/workflows/runTests.sh MarsRover-Solucion TestMarsRover
+      - name: Install Cuis University
+        run: ./.github/workflows/installCuis.sh
+      - name: "Run tests: MarsRoverLogger"
+        run: ./.github/workflows/runTests.sh MarsRover-Solucion TestMarsRoverLogger
+      - name: Install Cuis University
+        run: ./.github/workflows/installCuis.sh
+      - name: "Run tests: MarsRoverWindowTracker"
+        run: ./.github/workflows/runTests.sh MarsRover-Solucion TestMarsRoverWindowTracker
